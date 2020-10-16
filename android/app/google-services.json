@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556023531075",
+    "firebase_url": "https://appixgaram.firebaseio.com",
+    "project_id": "appixgaram",
+    "storage_bucket": "appixgaram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556023531075:android:fb4f920430830e9158f6f6",
+        "android_client_info": {
+          "package_name": "com.example.design_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556023531075-t14onchs8ffv1t26gimr8t934helv6ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBik5IM7V6sDRQWr6dNR8GEHuJce9-u4z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556023531075-t14onchs8ffv1t26gimr8t934helv6ou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
