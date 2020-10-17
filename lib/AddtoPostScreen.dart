@@ -56,15 +56,15 @@ class _AddPostState extends State<AddPost> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          iconTheme: new IconThemeData(color: Colors.black),
+          iconTheme: new IconThemeData(color: orange),
           centerTitle: true,
           title: Text(
             "Add Post",
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: orange),
           ),
-          backgroundColor: orange,
+          backgroundColor: Colors.white,
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         body: Padding(
             padding: EdgeInsets.all(20.0),
             child: SingleChildScrollView(
@@ -99,14 +99,14 @@ class _AddPostState extends State<AddPost> {
                                         borderSide: BorderSide(color: orange)),
                                     hintText: "Add  Caption",
                                     hintStyle: TextStyle(
-                                        color: Colors.orange,
+                                        color: orange,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   keyboardType: TextInputType.multiline,
                                   minLines: 1,
                                   maxLines: 15,
                                   style: new TextStyle(
-                                    color: Colors.orange,
+                                    color: orange,
                                     fontFamily: "Poppins",
                                   ),
                                 )))),
@@ -148,7 +148,7 @@ class _AddPostState extends State<AddPost> {
                       onPressed: () {},
                       child: Text(
                         "Post",
-                        style: new TextStyle(color: Colors.black, fontSize: 16),
+                        style: new TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     )
                   ],

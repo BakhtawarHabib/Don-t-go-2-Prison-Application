@@ -14,7 +14,7 @@ class _CommentSectionState extends State<CommentSection> {
         child: MaterialApp(
             debugShowCheckedModeBanner: false,
             home: Scaffold(
-                backgroundColor: Colors.black,
+                backgroundColor: Colors.white,
                 appBar: AppBar(
                   title: IconButton(
                       icon: Icon(
@@ -49,7 +49,7 @@ class _CommentSectionState extends State<CommentSection> {
                           ],
                         )
                       ]),
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.white,
                 ),
                 body: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -142,8 +142,8 @@ class _CommentSectionState extends State<CommentSection> {
                             ),
                             child: new Theme(
                                 data: new ThemeData(
-                                  primaryColor: Colors.black,
-                                  primaryColorDark: Colors.black,
+                                  primaryColor: orange,
+                                  primaryColorDark: orange,
                                 ),
                                 child: TextFormField(
                                   decoration: new InputDecoration(

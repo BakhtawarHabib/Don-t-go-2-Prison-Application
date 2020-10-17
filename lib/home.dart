@@ -77,13 +77,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       bottomNavigationBar: new Container(
-        color: Colors.black,
+        color: orange,
         height: 50.0,
         alignment: Alignment.center,
         child: new BottomAppBar(
-          color: Colors.black,
+          color: orange,
           child: new Row(
             // alignment: MainAxisAlignment.spaceAround,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.home,
                   size: 30,
-                  color: orange,
+                  color: Colors.white,
                 ),
                 onPressed: () {},
               ),
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.add_box,
                   size: 30,
-                  color: orange,
+                  color: Colors.white,
                 ),
                 onPressed: () => Navigator.push(
                   context,
@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.account_box,
                   size: 30,
-                  color: orange,
+                  color: Colors.white,
                 ),
                 onPressed: () => Navigator.push(
                   context,
@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.settings,
                   size: 30,
-                  color: orange,
+                  color: Colors.white,
                 ),
                 onPressed: () => Navigator.push(
                   context,
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Theme(
           data: Theme.of(context).copyWith(
             canvasColor:
-                Colors.black, //This will change the drawer background to blue.
+                Colors.white, //This will change the drawer background to blue.
             //other styles
           ),
           child: Drawer(
@@ -217,7 +217,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ]))),
       appBar: AppBar(
         iconTheme: new IconThemeData(color: orange),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: Image.asset(
           "assets/logoo.jpeg",
