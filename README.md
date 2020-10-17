@@ -1,4 +1,4 @@
-# Social Media Application in Flutter
+# Social Media Application in Flutter (DARK THEME)
 
 A new Flutter project.
 
