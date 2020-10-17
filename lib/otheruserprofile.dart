@@ -1,14 +1,17 @@
+import 'dart:ui';
+
 import 'package:design_app/Followers.dart';
 import 'package:design_app/Following.dart';
+
 import 'package:flutter/material.dart';
 
 final Color orange = Color(0XFFd45a29);
 
-class UserProfilePage extends StatefulWidget {
-  UserProfilePage({Key key}) : super(key: key);
+class OtherUserProfilePage extends StatefulWidget {
+  OtherUserProfilePage({Key key}) : super(key: key);
 
   @override
-  _UserProfilePageState createState() => _UserProfilePageState();
+  _OtherUserProfilePageState createState() => _OtherUserProfilePageState();
 }
 
 List images = [
@@ -32,7 +35,7 @@ List images = [
   "assets/t.jpg",
 ];
 
-class _UserProfilePageState extends State<UserProfilePage> {
+class _OtherUserProfilePageState extends State<OtherUserProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,7 +107,13 @@ class _UserProfilePageState extends State<UserProfilePage> {
   }
 }
 
-class HeaderSection extends StatelessWidget {
+class HeaderSection extends StatefulWidget {
+  @override
+  _HeaderSectionState createState() => _HeaderSectionState();
+}
+
+class _HeaderSectionState extends State<HeaderSection> {
+  bool ispressed = false;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -112,7 +121,7 @@ class HeaderSection extends StatelessWidget {
           border: Border.all(color: orange, width: 3.0),
           color: Colors.white,
           borderRadius: BorderRadius.circular(25.0)),
-      height: 320,
+      height: 330,
       width: 350,
       padding: EdgeInsets.all(20.0),
       child: Column(
@@ -126,14 +135,14 @@ class HeaderSection extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
               image: DecorationImage(
-                  image: AssetImage("assets/s.jpg"), fit: BoxFit.cover),
+                  image: AssetImage("assets/t.jpg"), fit: BoxFit.cover),
             ),
           ),
           SizedBox(height: 20),
           Container(
             alignment: Alignment.center,
             child: Text(
-              "Shoaib Salamat",
+              "Santoriya Alex",
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontWeight: FontWeight.bold, fontSize: 24, color: Colors.red),
@@ -148,7 +157,7 @@ class HeaderSection extends StatelessWidget {
                 Column(
                   children: <Widget>[
                     Text(
-                      "4",
+                      "200",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
@@ -164,31 +173,30 @@ class HeaderSection extends StatelessWidget {
                   ],
                 ),
                 InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Followers()),
-                    );
-                  },
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        "12K",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                            color: orange),
-                      ),
-                      Text(
-                        'Followers',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                            color: Colors.redAccent),
-                      )
-                    ],
-                  ),
-                ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Followers()),
+                      );
+                    },
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          "120K",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              color: orange),
+                        ),
+                        Text(
+                          'Followers',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                              color: Colors.redAccent),
+                        )
+                      ],
+                    )),
                 InkWell(
                     onTap: () {
                       Navigator.push(
@@ -199,7 +207,7 @@ class HeaderSection extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         Text(
-                          "400",
+                          "900",
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
@@ -216,6 +224,29 @@ class HeaderSection extends StatelessWidget {
                     ))
               ],
             ),
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          MaterialButton(
+            minWidth: 150,
+            height: 50,
+            shape: StadiumBorder(),
+            color: orange,
+            onPressed: () {
+              setState(() {
+                ispressed = !ispressed;
+              });
+            },
+            child: (ispressed)
+                ? Text(
+                    "Follow",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  )
+                : Text(
+                    "Following",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
           )
         ],
       ),

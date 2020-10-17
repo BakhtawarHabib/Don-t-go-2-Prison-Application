@@ -77,7 +77,7 @@ class _EditProfileState extends State<EditProfile> {
     return Scaffold(
         appBar: AppBar(
           iconTheme: new IconThemeData(color: orange),
-          backgroundColor: Color(0xFF080808),
+          backgroundColor: Colors.white,
           title: Text(
             "Edit Your Profile",
             style: TextStyle(
@@ -87,7 +87,7 @@ class _EditProfileState extends State<EditProfile> {
             ),
           ),
         ),
-        backgroundColor: Color(0xFF080808),
+        backgroundColor: Colors.white,
         body: Form(
             key: _formKey,
             child: SingleChildScrollView(
@@ -166,8 +166,8 @@ class _EditProfileState extends State<EditProfile> {
                       ),
                       child: new Theme(
                           data: new ThemeData(
-                            primaryColor: Colors.black,
-                            primaryColorDark: Colors.black,
+                            primaryColor: orange,
+                            primaryColorDark: orange,
                           ),
                           child: TextFormField(
                             controller: nameController,
@@ -204,8 +204,8 @@ class _EditProfileState extends State<EditProfile> {
                       ),
                       child: new Theme(
                           data: new ThemeData(
-                            primaryColor: Colors.black,
-                            primaryColorDark: Colors.black,
+                            primaryColor: orange,
+                            primaryColorDark: orange,
                           ),
                           child: TextFormField(
                             controller: ageController,
@@ -249,8 +249,8 @@ class _EditProfileState extends State<EditProfile> {
                       ),
                       child: new Theme(
                         data: new ThemeData(
-                          primaryColor: Colors.black,
-                          primaryColorDark: Colors.black,
+                          primaryColor: orange,
+                          primaryColorDark: orange,
                         ),
                         child: TextFormField(
                             controller: emailController,
@@ -294,8 +294,8 @@ class _EditProfileState extends State<EditProfile> {
                       ),
                       child: new Theme(
                           data: new ThemeData(
-                            primaryColor: Colors.black,
-                            primaryColorDark: Colors.black,
+                            primaryColor: orange,
+                            primaryColorDark: orange,
                           ),
                           child: TextFormField(
                             obscureText: _obscureText,
@@ -347,7 +347,7 @@ class _EditProfileState extends State<EditProfile> {
                   child: Text(
                     "Save",
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                         fontSize: 18,
                         fontFamily: "Poppins"),
                   ),

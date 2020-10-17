@@ -43,7 +43,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -105,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF080808),
+        backgroundColor: Colors.white,
         body: Form(
             key: _formKey,
             child: SingleChildScrollView(
@@ -137,8 +137,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         child: new Theme(
                             data: new ThemeData(
-                              primaryColor: Colors.black,
-                              primaryColorDark: Colors.black,
+                              primaryColor: orange,
+                              primaryColorDark: orange,
                             ),
                             child: TextFormField(
                               controller: emailController,
@@ -178,8 +178,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         child: new Theme(
                             data: new ThemeData(
-                              primaryColor: Colors.black,
-                              primaryColorDark: Colors.black,
+                              primaryColor: orange,
+                              primaryColorDark: orange,
                             ),
                             child: TextFormField(
                               obscureText: _obscureText,
@@ -333,7 +333,8 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF080808),
+          iconTheme: new IconThemeData(color: orange),
+          backgroundColor: Colors.white,
           title: Text(
             "Create Your Account",
             style: TextStyle(
@@ -343,7 +344,7 @@ class _RegisterState extends State<Register> {
             ),
           ),
         ),
-        backgroundColor: Color(0xFF080808),
+        backgroundColor: Colors.white,
         body: Form(
             key: _formKey,
             child: SingleChildScrollView(
@@ -418,8 +419,8 @@ class _RegisterState extends State<Register> {
                         ),
                         child: new Theme(
                             data: new ThemeData(
-                              primaryColor: Colors.black,
-                              primaryColorDark: Colors.black,
+                              primaryColor: orange,
+                              primaryColorDark: orange,
                             ),
                             child: TextFormField(
                               textAlign: TextAlign.center,
@@ -458,8 +459,8 @@ class _RegisterState extends State<Register> {
                         ),
                         child: new Theme(
                             data: new ThemeData(
-                              primaryColor: Colors.black,
-                              primaryColorDark: Colors.black,
+                              primaryColor: orange,
+                              primaryColorDark: orange,
                             ),
                             child: TextFormField(
                               textAlign: TextAlign.center,
@@ -497,8 +498,8 @@ class _RegisterState extends State<Register> {
                         ),
                         child: new Theme(
                           data: new ThemeData(
-                            primaryColor: Colors.black,
-                            primaryColorDark: Colors.black,
+                            primaryColor: orange,
+                            primaryColorDark: orange,
                           ),
                           child: TextFormField(
                               controller: emailController,
@@ -530,8 +531,8 @@ class _RegisterState extends State<Register> {
                         ),
                         child: new Theme(
                             data: new ThemeData(
-                              primaryColor: Colors.black,
-                              primaryColorDark: Colors.black,
+                              primaryColor: orange,
+                              primaryColorDark: orange,
                             ),
                             child: TextFormField(
                               obscureText: _obscureText,

@@ -29,11 +29,11 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           centerTitle: true,
           iconTheme: new IconThemeData(color: orange),
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white,
           title: Text(
             "Settings",
             style: TextStyle(
@@ -84,7 +84,7 @@ class _SettingsState extends State<Settings> {
             ),
             Container(
                 height: 50,
-                color: Colors.black,
+                color: Colors.white,
                 child: ListTile(
                     leading: Text("Profile",
                         style: TextStyle(
@@ -116,7 +116,7 @@ class _SettingsState extends State<Settings> {
                 )),
             Container(
                 height: 50,
-                color: Colors.black,
+                color: Colors.white,
                 child: ListTile(
                     leading: Text("Account",
                         style: TextStyle(
